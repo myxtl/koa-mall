@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
     port: 3000,
     staticDir: path.resolve('../public'),
-    db: {
+    dbConfig: {
         database: 'mall',
         user: 'root',
         password: '123456',
