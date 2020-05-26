@@ -12,6 +12,6 @@ router.get('/query', category.getCategoryList);
 router.get('/findOne/:id', category.getCategoryById);
 router.post('/add', category.addCategory);
 router.post('/update', category.updateCategory);
-router.post('/delete/:id', category.deleteCategory);
+router.post('/batchDel', category.deleteCategorys);
 
 module.exports = router;

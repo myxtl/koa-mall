@@ -16,12 +16,14 @@ exports.getCategoryList = async ctx => {
 }
 exports.getCategoryById = async ctx => {
     const { id } = ctx.params;
-    const data = await categoryModel.getCategoryById(id);
-    ctx.body = new Success(data[0], 'success');
+    const res = await categoryModel.getCategoryById(id);
+    ctx.body = new Success(res[0] ? res[0] : null, 'success');
 }
 exports.updateCategory = async ctx => {
     ctx.body = new Success(null, '修改成功');
 }
-exports.deleteCategory = async ctx => {
+exports.deleteCategorys = async ctx => {
+    let { ids } = ctx.request.body;
+    const res = categoryModel.deleteCategorys(ids)
     ctx.body = new Success(null, '删除成功');
 }

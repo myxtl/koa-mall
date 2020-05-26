@@ -5,7 +5,7 @@
  */ 
 const C = require('./const');
 
-function Error(errorCode, message, data) {
+function Error(errorCode, data, message) {
     this.code = 500;
     this.errorCode = errorCode;
     this.message = message || C.ERROR_CODE.DESC[errorCode];
