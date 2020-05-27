@@ -7,8 +7,10 @@ const router = require('koa-router')();
 
 const categoryRouter = require('./category');
 const common = require('./common');
+const users = require('./users')
 
 router.use(categoryRouter.routes());
 router.use(common.routes());
+router.use(users.routes());
 
 module.exports = router;

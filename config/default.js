@@ -8,6 +8,9 @@ const path = require('path');
 module.exports = {
     port: 3000,
     staticDir: path.resolve('../public'),
+    jwt: {
+        secret: 'my-secret',
+    },
     dbConfig: {
         database: 'mall',
         user: 'root',
