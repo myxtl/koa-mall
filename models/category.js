@@ -18,6 +18,6 @@ exports.updateCategory = async (categoryName, categoryImages, categoryId) => {
     return await db.query(sql, [categoryName, categoryImages, categoryId])
 }
 exports.deleteCategorys = async (ids) => {
-    const sql = `delete from category where categoryId in (${ids})?`;
+    const sql = `delete from category where categoryId in (${ids});`;
     return await db.query(sql, ids);
 }
