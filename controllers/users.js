@@ -15,7 +15,7 @@ exports.login = async (ctx) => {
     console.log(res)
     if (res.length === 0) {
         ctx.body = new Error(C.ERROR_CODE.USER_PASSWORD_ERROR, null);
-        return;
+        return false;
     }
 
     ctx.body = new Success({
@@ -27,4 +27,12 @@ exports.login = async (ctx) => {
 }
 exports.register = async ctx => {
     let { userName, password } = ctx.request.body;
+    let query = await usersModel.login(userName, password);
+    console.log(query)
+    if (query.length !== 0) {
+        ctx.body = new Error(C.ERROR_CODE.LOGIN_NAME_ALREADY_TOOK, null);
+        return false;
+    }
+    let res = await usersModel.register(userName, password);
+    ctx.body = new Success(null, '注册成功')
 }

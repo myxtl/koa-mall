@@ -9,3 +9,8 @@ exports.login = async (userName, password) => {
     const sql = 'select * from users where userName = ? and password = ?';
     return await db.query(sql, [userName, password]);
 }
+
+exports.register = async (userName, password) => {
+    const sql = `insert into users values(null, ?, ?, null)`;
+    return await db.query(sql, [userName, password])
+}
