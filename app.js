@@ -15,7 +15,6 @@ const {
 } = require('./config/default')
 const error = require('./middlewares/error')
 const token = require('./middlewares/token')
-console.log(jwt.secret, '========')
 // 跨域
 app.use(cors());
 
@@ -47,21 +46,21 @@ app.use((ctx, next) => {
     return next().catch((err) => {
         if (err.status === 401) {
             ctx.status = 401;
-            ctx.body = {
-                ok: false,
-                msg: err.originalError ? err.originalError.message : err.message
-            }
+            ctx.body = 'Protected resource, use Authorization header to get access\n';
         } else {
             throw err;
         }
-    });
-});
+    })
+})
 
 
 app.use(KoaJwt({
-	secret: 'my_token'
+    secret: jwt.secret
 }).unless({
-	path: [/\/users\/login/]
+    path: [/^\/users\/login/]
 }));
+
+
+app.listen(5555, () => console.log('server running'))
 
 module.exports = app
