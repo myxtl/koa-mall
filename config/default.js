@@ -6,7 +6,7 @@
 const path = require('path');
 
 module.exports = {
-    port: 3000,
+    port: 5555,
     staticDir: path.resolve('../public'),
     jwt: {
         secret: 'my-secret',
@@ -17,5 +17,10 @@ module.exports = {
         password: '123456',
         port: '3306',
         host: '127.0.0.1'
+    },
+    wxConfig: {
+        appid: '',
+        secret: '',
+        grant_type: 'authorization_code'
     }
 }

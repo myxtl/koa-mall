@@ -10,5 +10,6 @@ router.prefix('/users');
 
 router.post('/login', users.login);
 router.post('/register', users.register);
+router.post('/wxlogin', users.wxlogin);
 
 module.exports = router;

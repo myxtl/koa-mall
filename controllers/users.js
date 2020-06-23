@@ -12,7 +12,6 @@ exports.login = async (ctx) => {
     let { userName, password } = ctx.request.body;
 
     let res = await usersModel.login(userName, password);
-    console.log(res)
     if (res.length === 0) {
         ctx.body = new Error(C.ERROR_CODE.USER_PASSWORD_ERROR, null);
         return false;
@@ -35,4 +34,10 @@ exports.register = async ctx => {
     }
     let res = await usersModel.register(userName, password);
     ctx.body = new Success(null, '注册成功')
+}
+
+exports.wxlogin = async ctx => {
+    let {code, rawData, signature, encrypteData, iv} = res.request.body;
+    console.log(code);
+    ctx.body = new Success(null, 'success');
 }

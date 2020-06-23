@@ -1,0 +1,156 @@
+[2020-06-23T17:01:21.733] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:01:40.621] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:01:54.972] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:02:13.744] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:02:45.233] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:03:38.306] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:11:56.692] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:13:04.144] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:14:38.889] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:15:55.897] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:16:19.916] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
+[2020-06-23T17:16:34.308] [ERROR] application - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (E:\server\koa-mall\node_modules\koa\lib\context.js:97:11)
+    at resolveAuthorizationHeader (E:\server\koa-mall\node_modules\koa-jwt\lib\resolvers\auth-header.js:26:18)
+    at E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (E:\server\koa-mall\node_modules\koa-jwt\lib\index.js:20:24)
+    at E:\server\koa-mall\node_modules\koa-unless\index.js:29:12
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\server\koa-mall\node_modules\koa-log4\koa-logger.js:86:13
+    at dispatch (E:\server\koa-mall\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\server\koa-mall\node_modules\koa-bodyparser\index.js:95:11) {
+  message: 'Bad Authorization header format. Format is "Authorization: Bearer <token>"'
+}
