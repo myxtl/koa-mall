@@ -8,8 +8,8 @@ const path = require('path');
 module.exports = {
     port: 5555,
     staticDir: path.resolve('../public'),
-    jwt: {
-        secret: 'my-secret',
+    jwtConfig: {
+        secret: 'my-secret'
     },
     dbConfig: {
         database: 'mall',

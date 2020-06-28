@@ -12,6 +12,7 @@ exports.addCategory = async ctx => {
 }
 exports.getCategoryList = async ctx => {
     const list = await categoryModel.getCategoryList();
+    console.log(list)
     ctx.body = new Success(list, 'success');
 }
 exports.getCategoryById = async ctx => {

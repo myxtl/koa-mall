@@ -10,15 +10,8 @@ const cors = require('koa2-cors')
 const KoaJwt = require('koa-jwt')
 const error = require('./middlewares/error')
 const token = require('./middlewares/token')
-const {
-    port,
-    staticDir,
-    jwt
-} = require('./config/default')
-const {
-    logger,
-    accessLogger
-} = require('./utils/logs');
+const { port, jwtConfig } = require('./config/default')
+const { logger, accessLogger } = require('./utils/logs');
 // 跨域
 app.use(cors());
 
@@ -31,17 +24,19 @@ app.on('error', err => {
     logger.error(err);
 });
 
-app.use(KoaJwt({
-    secret: jwt.secret
+/* app.use(KoaJwt({
+    secret: jwt.secret,
+    credentialsRequired: false
 }).unless({
-    // path: [/^\/users\/login/]
-    // path: [{ url: '/users/login', methods: ['POST'] }]
-}));
+    path: [
+       '/users/login'
+    ]
+})); */
 
 // middlewares
 app.use(error)
 // 验证token是否过期或失效
-app.use(token)
+// app.use(token)
 
 // routes
 const Routers = require('./routes');

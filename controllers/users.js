@@ -11,6 +11,11 @@ const C = require('../utils/const');
 exports.login = async (ctx) => {
     let { userName, password } = ctx.request.body;
 
+    if (!userName || !password) {
+        ctx.body = new Error(C.ERROR_CODE.REQUIRE_MORE_PARAMS, null);
+        return false;
+    }
+
     let res = await usersModel.login(userName, password);
     if (res.length === 0) {
         ctx.body = new Error(C.ERROR_CODE.USER_PASSWORD_ERROR, null);
