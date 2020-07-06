@@ -5,9 +5,9 @@
  */ 
 const router = require('koa-router')();
 
-const { jwtAuth, decode } = require('../utils/jwtAuth')
+// const { jwtAuth, decode } = require('../utils/jwtAuth')
 
-router.use(jwtAuth)
+// router.use(jwtAuth)
 
 const categoryRouter = require('./category');
 const common = require('./common');

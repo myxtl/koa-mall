@@ -10,14 +10,18 @@ exports.getCategoryList = async () => {
     return await db.query(sql, []);
 }
 exports.getCategoryById = async (id) => {
-    const sql = 'select * from category where categoryId = ?';
+    const sql = 'select * from category where id = ?';
     return await db.query(sql, id);
 }
-exports.updateCategory = async (categoryName, categoryImages, categoryId) => {
-    const sql = 'update category set categoryName=?, categoryImages=? where categoryId=?';
-    return await db.query(sql, [categoryName, categoryImages, categoryId])
+exports.addCategory = async (name, sort_order, parent_id) => {
+    const sql = 'insert into category(name,sort_order,parent_id) values(?,?,?)';
+    return await db.query(sql, [name, sort_order, parent_id]);
+}
+exports.updateCategory = async (name, sort_order, id) => {
+    const sql = 'update category set categoryName=?, categoryImages=? where id=?';
+    return await db.query(sql, [name, sort_order, id])
 }
 exports.deleteCategorys = async (ids) => {
-    const sql = `delete from category where categoryId in (${ids});`;
+    const sql = `delete from category where id in (${ids});`;
     return await db.query(sql, ids);
 }

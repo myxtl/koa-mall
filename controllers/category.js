@@ -2,18 +2,36 @@
  * @Descripttion: 
  * @Author: 
  * @Date: 2020-05-26 14:46:57
- */ 
+ */
 const categoryModel = require('../models/category');
 const C = require('../utils/const');
-const {Success, Error} = require('../utils/message');
+const { Success, Error } = require('../utils/message');
 
 exports.addCategory = async ctx => {
+    let { name, sort_order, parent_id } = ctx.request.body
+    let result = await categoryModel.addCategory(name, sort_order, parent_id);
     ctx.body = new Success(null, '添加成功');
 }
 exports.getCategoryList = async ctx => {
     const list = await categoryModel.getCategoryList();
-    console.log(list)
-    ctx.body = new Success(list, 'success');
+    let categories = [];
+    list.forEach(item => {
+        if (item.parent_id == null) {
+            item.children = [];
+            categories.push(item);
+        }
+    });
+    list.forEach(item => {
+        if (item.parent_id) {
+            categories.forEach(category => {
+                if (item.parent_id == category.id) {
+                    category.children.push(item);
+                }
+            });
+        }
+    });
+    console.log(categories)
+    ctx.body = new Success(categories, 'success');
 }
 exports.getCategoryById = async ctx => {
     const { id } = ctx.params;
