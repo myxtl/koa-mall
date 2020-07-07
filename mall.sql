@@ -18,11 +18,21 @@ CREATE TABLE `category` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '分类id',
 	`parent_id` INT(11) DEFAULT NULL COMMENT '父级分类id',
 	`name`  VARCHAR(50) DEFAULT NULL COMMENT '分类名称',
+	`img_url` VARCHAR(500) DEFAULT NULL COMMENT '分类图片',
 	`sort_order` INT(4) DEFAULT NULL COMMENT '排序编号',
 	`create_time` datetime DEFAULT NULL COMMENT '创建时间',
 	`update_time` datetime DEFAULT NULL COMMENT '更新时间',
 	PRIMARY KEY (`id`)
 ) ENGINE=INNODB AUTO_INCREMENT=100032 DEFAULT CHARSET=utf8
+
+CREATE TABLE `banner` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '轮播图id',
+	`product_id` INT(11) DEFAULT NULL COMMENT '产品id',
+	`img_url` VARCHAR(500) DEFAULT NULL COMMENT '轮播图片',
+	`create_time` datetime DEFAULT NULL COMMENT '创建时间',
+	`update_time` datetime DEFAULT NULL COMMENT '更新时间',
+	PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8
 
 -- 产品表
 CREATE TABLE `product` (

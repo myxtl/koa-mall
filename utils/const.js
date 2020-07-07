@@ -25,6 +25,8 @@ exports.ERROR_CODE = {
     NOT_ENOUGH: 1018,
     IS_FULL: 1019,
     QUERY_EMPTY: 1020,
+    EXIST_CATEGORY_NAME: 1300,
+    PRODUCT_NOT_FIND: 1400,
     DESC: {
         1000: '系统错误',
         1001: '手机 已占用',
@@ -46,7 +48,9 @@ exports.ERROR_CODE = {
         1017: '代理码异常',
         1018: '数据不足',
         1019: '已满',
-        1020: '查询为空'
+        1020: '查询为空',
+        1300: '分类名称已存在',
+        1400: '商品不存在或已被删除'
     }
 };
 

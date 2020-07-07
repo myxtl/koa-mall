@@ -8,7 +8,7 @@ const C = require('./const');
 function Error(errorCode, data, message) {
     // this.code = 500;
     this.code = errorCode;
-    this.data = data;
+    this.data = data || null;
     this.msg = message || C.ERROR_CODE.DESC[errorCode];
 }
 

@@ -8,9 +8,14 @@ const C = require('../utils/const');
 const { Success, Error } = require('../utils/message');
 
 exports.addCategory = async ctx => {
-    let { name, sort_order, parent_id } = ctx.request.body
-    let result = await categoryModel.addCategory(name, sort_order, parent_id);
-    ctx.body = new Success(null, '添加成功');
+    let { name, img_url, sort_order, parent_id } = ctx.request.body;
+    let existName = await categoryModel.getCategoryByName(name);
+    if (existName.length > 0) {
+        ctx.body = new Error(C.ERROR_CODE.EXIST_CATEGORY_NAME);
+        return false;
+    }
+    let result = await categoryModel.addCategory(name, img_url, sort_order, parent_id);
+    ctx.body = new Success(result, '添加成功');
 }
 exports.getCategoryList = async ctx => {
     const list = await categoryModel.getCategoryList();
@@ -30,7 +35,6 @@ exports.getCategoryList = async ctx => {
             });
         }
     });
-    console.log(categories)
     ctx.body = new Success(categories, 'success');
 }
 exports.getCategoryById = async ctx => {
