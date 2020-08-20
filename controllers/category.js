@@ -4,6 +4,7 @@
  * @Date: 2020-05-26 14:46:57
  */
 const categoryModel = require('../models/category');
+const utils = require('../utils/utils');
 const C = require('../utils/const');
 const { Success, Error } = require('../utils/message');
 
@@ -18,6 +19,7 @@ exports.addCategory = async ctx => {
     ctx.body = new Success(result, '添加成功');
 }
 exports.getCategoryList = async ctx => {
+
     const list = await categoryModel.getCategoryList();
     let categories = [];
     list.forEach(item => {
@@ -35,12 +37,13 @@ exports.getCategoryList = async ctx => {
             });
         }
     });
-    ctx.body = new Success(categories, 'success');
+    let data = utils.camel(categories)
+    ctx.body = new Success(data, 'success');
 }
 exports.getCategoryById = async ctx => {
     const { id } = ctx.params;
     const res = await categoryModel.getCategoryById(id);
-    ctx.body = new Success(res[0] ? res[0] : null, 'success');
+    ctx.body = new Success(res[0] ? utils.camel(res[0]) : null, 'success');
 }
 exports.updateCategory = async ctx => {
     ctx.body = new Success(null, '修改成功');

@@ -6,7 +6,7 @@
 const path = require('path');
 
 module.exports = {
-    port: 5555,
+    port: 8088,
     staticDir: path.resolve('../public'),
     jwtConfig: {
         secret: 'my-secret'

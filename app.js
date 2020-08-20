@@ -13,7 +13,10 @@ const token = require('./middlewares/token')
 const { port, jwtConfig } = require('./config/default')
 const { logger, accessLogger } = require('./utils/logs');
 // 跨域
-app.use(cors());
+app.use(cors({
+    origin:['http://localhost:3001'],
+    credentials:true
+  }))
 
 app.use(bodyParser());
 
