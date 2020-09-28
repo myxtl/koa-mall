@@ -1,0 +1,11 @@
+@url=http://sqsm.mirgong.com
+@json=Content-Type: application/json
+@form=Content-Type: application/x-www-form-urlencoded
+@token={token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDEzNDU3MTQsInN1YiI6IndlaXpoYWlodWkiLCJuYmYiOjE2MDEyNTkzMTQsImF1ZCI6ImVhc3lfc3dvb2xlX2FkbWluIiwiaWF0IjoxNjAxMjU5MzE0LCJqdGkiOiI1MDM3Mzg2MmM3N2NiZjNkN2VmODU2MmZhOTdiN2Y5YSIsInN0YXR1cyI6MSwiZGF0YSI6W3sidXNlcl9pZCI6MSwicm9sZV9pZCI6MTAwfV19.Ekw7ISjcRSm1XOXN6QaebAVeQ3T1Yl6keBfzTkpYCmg}
+
+
+### 分类列表
+get {{url}}/api/get_cate_list
+
+### 产品列表
+get {{url}}/api/get_product_list

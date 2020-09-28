@@ -10,13 +10,29 @@ const cors = require('koa2-cors')
 const KoaJwt = require('koa-jwt')
 const error = require('./middlewares/error')
 const token = require('./middlewares/token')
-const { port, jwtConfig } = require('./config/default')
-const { logger, accessLogger } = require('./utils/logs');
+const {
+    port,
+    jwtConfig
+} = require('./config/default')
+const {
+    logger,
+    accessLogger
+} = require('./utils/logs');
+const swagger = require('./utils/swagger');
+
+app.use(swagger.routes(), swagger.allowedMethods());
+const { koaSwagger } = require('koa2-swagger-ui');
+app.use(koaSwagger({
+    routePrefix: '/swagger', // host at /swagger instead of default /docs
+    swaggerOptions: {
+        url: '/swagger.json', // example path to json 其实就是之后swagger-jsdoc生成的文档地址
+    },
+}))
 // 跨域
 app.use(cors({
-    origin:['http://localhost:3001'],
-    credentials:true
-  }))
+    origin: '*',
+    credentials: true
+}))
 
 app.use(bodyParser());
 

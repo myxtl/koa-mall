@@ -26,7 +26,9 @@
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.0",
     "koa2-cors": "^2.0.6",
-    "mysql": "^2.18.1"
+    "koa2-swagger-ui": "^5.0.2",
+    "mysql": "^2.18.1",
+    "swagger-jsdoc": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

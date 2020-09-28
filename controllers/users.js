@@ -10,7 +10,7 @@ const C = require('../utils/const');
 
 exports.login = async (ctx) => {
     let { userName, password } = ctx.request.body;
-
+    console.log(ctx.request.body)
     if (!userName || !password) {
         ctx.body = new Error(C.ERROR_CODE.REQUIRE_MORE_PARAMS, null);
         return false;

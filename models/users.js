@@ -5,12 +5,12 @@
  */
 const db = require('./db');
 
-exports.login = async (userName, password) => {
-    const sql = 'select * from users where userName = ? and password = ?';
-    return await db.query(sql, [userName, password]);
+exports.login = async (username, password) => {
+    const sql = 'select * from users where username = ? and password = ?';
+    return await db.query(sql, [username, password]);
 }
 
-exports.register = async (userName, password) => {
+exports.register = async (username, password) => {
     const sql = `insert into users values(null, ?, ?, null)`;
-    return await db.query(sql, [userName, password])
+    return await db.query(sql, [username, password])
 }
